@@ -1,0 +1,91 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: brown;
+    background-color: hsl(199, 27%, 18%); 
+}
+
+header {
+    margin: 20px;
+    padding: 20px;
+    background-color: white; /* Light yellow */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #a9927d; /* Dark blue */
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 30px; /* Adjust button size here */
+    background-color: #4CAF50; /* Green */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li a:hover {
+    background-color: #5e503f; /* Darker green on hover */
+}
+
+main section.vertical-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.vertical-box .left-box,
+main section.vertical-box .right-box {
+    width: calc(50% - 20px); 
+    margin: 20px;
+    padding: 20px;
+    background-color: #cfe1b9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main section.vertical-box .left-box h2,
+main section.vertical-box .right-box h2 {
+    color: #1e272e; /* Dark blue */
+    margin-bottom: 20px;
+}
+section.decision-tree {
+    text-align: center;
+}
+
+section.decision-tree h2 {
+    margin-bottom: 20px;
+}
+
+section.decision-tree button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.decision-tree button:hover {
+    background-color: #45a049;
+}
+
+section.decision-tree #result {
+    margin-top: 20px;
+}
