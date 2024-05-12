@@ -8,13 +8,13 @@ body {
 header {
     margin: 20px;
     padding: 20px;
-    background-color: white; /* Light yellow */
+    background-color: white; 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    color: #a9927d; /* Dark blue */
+    color: #a9927d; 
     margin-bottom: 20px;
 }
 
@@ -32,8 +32,8 @@ nav ul li {
 
 nav ul li a {
     display: block;
-    padding: 20px 30px; /* Adjust button size here */
-    background-color: #4CAF50; /* Green */
+    padding: 20px 30px;
+    background-color: #4CAF50; 
     color: white;
     text-decoration: none;
     border-radius: 10px;
@@ -41,7 +41,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #5e503f; /* Darker green on hover */
+    background-color: #5e503f; 
 }
 
 main section.vertical-box {
@@ -88,4 +88,49 @@ section.decision-tree button:hover {
 
 section.decision-tree #result {
     margin-top: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px; 
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; 
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #45a049;
 }

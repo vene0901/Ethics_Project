@@ -13,7 +13,14 @@
     <nav>
         <ul>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="#">Impacts</a></li>
+            <li class="dropdown"> 
+                <a class="dropbtn" href="#">Impacts</a>
+                <div class="dropdown-content">
+                    <a href="impacts.html#ethnic_names">Ethnic Names & Ethnicity</a>
+                    <a href="impacts.html#race">Race</a>
+                    <a href="impacts.html#facial_recognition">Facial Recognition</a>
+                </div>
+            </li>
             <li><a href="#">Tools</a></li>
             <li><a href="#">Personal Experience</a></li>
             <li><a href="#">Feedback</a></li>
@@ -24,12 +31,16 @@
 <main>
     <section class="vertical-box">
         <div class="left-box">
+            <h2>Home</h2>
+            <p>Welcome to Our AI Project</p>
+        </div>
+        <div class="right-box">
             <h2>Decision Tree</h2>
-            <!-- Add content for the decision tree section here -->
+            <!-- info about the decision tree -->
             <section class="decision-tree">
                 <h2>AI Implementation Decision Guide</h2>
                 <div id="questions">
-                    <!-- Questions and options will be added dynamically here -->
+                    <!-- dynamic decision -->
                 </div>
                 <button onclick="startDecisionTree()">Start Decision Tree</button>
                 <div id="result" style="display: none;">
@@ -37,11 +48,6 @@
                     <p id="recommendation"></p>
                 </div>
             </section>
-        </div>
-        <div class="right-box">
-            <h2>Home</h2>
-            <p>Welcome to Our AI Project</p>
-            
         </div>
     </section>
 </main>
