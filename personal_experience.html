@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Personal Experience</h1>
+    <nav>
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown"> 
+                <a class="dropbtn" href="#">Impacts</a>
+                <div class="dropdown-content">
+                    <a href="impacts.html#ethnic_names">Ethnic Names & Ethnicity</a>
+                    <a href="racial_bias.html">Race</a>
+                    <a href="facial_recognition.html">Facial Recognition</a>
+                </div>
+            </li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="personal_experience.html">Personal Experience</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="community-stories">
+        <h2>Community Stories</h2>
+        <div class="story">
+            <p>"In navigating AI job screening processes, I often opt out due to awareness of algorithmic biases. These biases, rooted in historical data, perpetuate inequalities. Job recruiters' efforts to mitigate these biases are often insufficient."</p>
+            <p>- Anonymous, Women of Color in the CS Field</p>
+        </div>
+        <div class="story">
+            <p>"AI job screening falls short in accounting for diverse backgrounds, particularly for women of color. This inadequacy exacerbates existing disparities in hiring practices."</p>
+            <p>- Anonymous, Women of Color in the CS Field</p>
+        </div>
+        <div class="story">
+            <p>"I usually opt out of AI screening processes due to concerns regarding biases. This decision stems from a desire to maintain agency over my application."</p>
+            <p>- Anonymous, Women of Color in the CS Field</p>
+        </div>
+        <div class="story">
+            <p>"As a dark-skinned woman, I recognize potential biases in facial recognition technology. These biases pose risks to fair evaluation and recruitment."</p>
+            <p>- Anonymous, Women of Color in the CS Field</p>
+        </div>
+        <div class="story">
+            <p>"Data privacy and security measures in AI job screening are concerning, especially given potential biases. Safeguarding personal information is paramount."</p>
+            <p>- Anonymous, Women of Color in the CS Field</p>
+        </div>
+        <div class="story">
+            <p>"Gender and race intersect in AI job screening, posing unique challenges for women of color. Double biases based on gender and race necessitate comprehensive evaluation."</p>
+            <p>- Anonymous, Women of Color in the CS Field</p>
+        </div>
+        <div class="story">
+            <p>"Considering a career transition, AI job screening introduces uncertainty. Biases in algorithms may hinder successful transitions, necessitating transparent evaluation."</p>
+            <p>- Anonymous, Women of Color in the CS Field</p>
+        </div>
+    </section>
+
+    <section class="user-experience-form">
+        <h2>Share Your Experience</h2>
+        <form id="experienceForm" action="submit_experience.php" method="post">
+            <label for="job_screening_experience">Your Experience with AI in Job Screening:</label><br>
+            <textarea id="job_screening_experience" name="job_screening_experience" rows="6" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p id="submitMessage" style="display: none;">Thank you for sharing your experience with us!</p>
+    </section>
+</main>
+
+<script>
+document.getElementById("experienceForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+    document.getElementById("experienceForm").reset(); // Reset the form
+    document.getElementById("submitMessage").style.display = "block"; // Show the submit message
+});
+</script>
+
+</body>
+</html>

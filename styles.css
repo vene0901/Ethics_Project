@@ -1,4 +1,4 @@
-
+/* background */
 body {
     font-family: Arial, sans-serif;
     color: navy;
@@ -64,6 +64,7 @@ main section.vertical-box .right-box h2 {
     color: #1e272e; /* Dark blue */
     margin-bottom: 20px;
 }
+
 section.decision-tree {
     text-align: center;
 }
@@ -130,17 +131,19 @@ section.decision-tree #result {
     border-radius: 5px; 
     cursor: pointer;
 }
+
+/* Feedback Section */
 .feedback-section {
     width: 80%; 
     max-width: 800px; 
     padding: 20px; 
     background-color: #fff; 
     border-radius: 10px; 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .feedback-section h2 {
-    color: #1e272e; 
+    color: #333333;
     margin-bottom: 20px;
 }
 
@@ -163,7 +166,7 @@ section.decision-tree #result {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    resize: vertical; /* Allow vertical resizing */
+    resize: vertical; 
 }
 
 .feedback-section form input[type="submit"] {
@@ -184,22 +187,52 @@ section.decision-tree #result {
     color: #555;
 }
 
-.dropbtn:hover {
+/* Personal Experience Form */
+.user-experience-form {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-experience-form h2 {
+    color: #333;
+    margin-top: 0;
+    text-align: center;
+}
+
+.user-experience-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.user-experience-form input[type="submit"] {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-experience-form input[type="submit"]:hover {
     background-color: #45a049;
 }
 
-.impact-section img {
-    max-width: 10%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-.impact-section {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+.user-experience-form #submitMessage {
+    display: none;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
