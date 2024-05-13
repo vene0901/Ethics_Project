@@ -1,7 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: brown;
+    color: navy;
     background-color: hsl(199, 27%, 18%); 
 }
 
@@ -130,7 +130,76 @@ section.decision-tree #result {
     border-radius: 5px; 
     cursor: pointer;
 }
+.feedback-section {
+    width: 80%; 
+    max-width: 800px; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /
+}
+
+.feedback-section h2 {
+    color: #1e272e; 
+    margin-bottom: 20px;
+}
+
+.feedback-section p {
+    margin-bottom: 20px;
+}
+
+.feedback-section form {
+    margin-bottom: 20px;
+}
+
+.feedback-section form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.feedback-section form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-section form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.feedback-section .transparency {
+    font-style: italic;
+    color: #555;
+}
 
 .dropbtn:hover {
     background-color: #45a049;
+}
+
+.impact-section img {
+    max-width: 10%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.impact-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
 }

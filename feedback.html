@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Feedback</h1>
+    <nav>
+        <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li class="dropdown"> 
+                <a class="dropbtn" href="#">Impacts</a>
+                <div class="dropdown-content">
+                    <a href="impacts.html#ethnic_names">Ethnic Names & Ethnicity</a>
+                    <a href="racial_bias.html">Race</a>
+                    <a href="facial_recognition.html">Facial Recognition</a>
+                </div>
+            </li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">Personal Experience</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="feedback-section">
+        <h2>Help Us Improve</h2>
+        <form id="feedbackForm" action="submit_feedback.php" method="post">
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+            <label for="suggestions">Suggestions:</label><br>
+            <textarea id="suggestions" name="suggestions" rows="4" cols="50"></textarea><br><br>
+            <label for="bugs">Bug Reports:</label><br>
+            <textarea id="bugs" name="bugs" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <p id="feedbackMessage" style="display: none;">Thanks for your feedback!</p>
+    </section>
+</main>
+
+<script>
+document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent form submission
+    document.getElementById("feedbackForm").style.display = "none"; // Hide the form
+    document.getElementById("feedbackMessage").style.display = "block"; // Show the feedback message
+});
+</script>
+
+</body>
+</html>
