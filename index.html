@@ -54,6 +54,30 @@
                     <li><a href="news_article_2.html">News Article 2</a></li>
                 </ul>
             </div>
+            <div>
+                <h3>Resource Library</h3>
+                <ul>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://twitter.com/example">Twitter</a></li>
+                    <li><a href="https://facebook.com/example">Facebook</a></li>
+                    <li><a href="https://linkedin.com/company/example">LinkedIn</a></li>
+                </ul>
+            </div>
+                <h3>Subscribe to Our Newsletter</h3>
+                <form action="subscribe.php" method="post">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            <div>
+                
+            </div>
         </div>
         <div class="right-box">
             <h2>Decision Tree</h2>
@@ -63,7 +87,7 @@
                 <div id="questions">
                     <!-- dynamic decision -->
                 </div>
-                <button onclick="startDecisionTree()">Start Decision Tree</button>
+                <!-- <button onclick="startDecisionTree()">Start Decision Tree</button> -->
                 <div id="result" style="display: none;">
                     <h3>Final Recommendation:</h3>
                     <p id="recommendation"></p>
@@ -72,32 +96,6 @@
         </div>
     </section>
 </main>
-
-<footer>
-    <div class="resource-library">
-        <h3>Resource Library</h3>
-        <ul>
-            <li><a href="books.html">Books</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="articles.html">Articles</a></li>
-        </ul>
-    </div>
-    <div class="social-media">
-        <h3>Follow Us</h3>
-        <ul>
-            <li><a href="https://twitter.com/example">Twitter</a></li>
-            <li><a href="https://facebook.com/example">Facebook</a></li>
-            <li><a href="https://linkedin.com/company/example">LinkedIn</a></li>
-        </ul>
-    </div>
-    <div class="newsletter">
-        <h3>Subscribe to Our Newsletter</h3>
-        <form action="subscribe.php" method="post">
-            <input type="email" name="email" placeholder="Your Email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div>
-</footer>
 
 <script src="decision_tree.js"></script>
 
