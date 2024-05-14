@@ -35,6 +35,42 @@ const questions = [
             no: "Conduct employee surveys and consultations to understand concerns and preferences regarding AI integration."
         }
     },
+    {
+        question: "Does your company have a plan to ensure transparency and explainability in AI decision-making processes?",
+        options: {
+            yes: "Yes",
+            no: "No"
+        },
+        weight: 2,
+        outcomes: {
+            yes: "Continue efforts to enhance transparency and explainability to build trust with stakeholders.",
+            no: "Develop strategies to increase transparency and provide explanations for AI decisions."
+        }
+    },
+    {
+        question: "Has your company assessed the potential legal risks associated with AI deployment, such as regulatory compliance and liability?",
+        options: {
+            yes: "Yes",
+            no: "No"
+        },
+        weight: 3,
+        outcomes: {
+            yes: "Ensure compliance with relevant regulations and implement measures to mitigate legal risks.",
+            no: "Conduct a legal risk assessment and seek expert advice to address potential liabilities."
+        }
+    },
+    {
+        question: "Does your company have access to high-quality and diverse datasets for training AI models?",
+        options: {
+            yes: "Yes",
+            no: "No"
+        },
+        weight: 2,
+        outcomes: {
+            yes: "Leverage available datasets to improve AI model performance.",
+            no: "Explore options to acquire or generate diverse datasets to enhance AI capabilities."
+        }
+    }
 ];
 
 let currentQuestionIndex = 0;
@@ -85,6 +121,10 @@ function showFinalResult() {
     resultElement.innerHTML = `
         <h3>Final Recommendation:</h3>
         <p>${finalOutcome}</p>
+        <p>For more information and resources, please visit our <a href="https://www.ibm.com/artificial-intelligence?lnk=flatitem" target="_blank">resources page</a>.</p>
         <button onclick="startDecisionTree()">Take Quiz Again</button>
     `;
 }
+
+
+startDecisionTree();

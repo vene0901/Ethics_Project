@@ -1,20 +1,20 @@
 /* background */
 body {
     font-family: Arial, sans-serif;
-    color: whitesmoke;
+    color: rgb(137, 134, 134);
     background-color: hsl(199, 27%, 18%); 
 }
 
 header {
     margin: 20px;
     padding: 20px;
-    background-color: white; 
+    background-color: rgb(207, 205, 205); 
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    color: #a9927d; 
+    color: #8b755f; 
     margin-bottom: 20px;
 }
 
@@ -34,7 +34,7 @@ nav ul li a {
     display: block;
     padding: 20px 30px;
     background-color: #4CAF50; 
-    color: white;
+    color: rgb(251, 248, 248);
     text-decoration: none;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -99,7 +99,7 @@ section.decision-tree #result {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #f0e1e1;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/* CSS Document */
+body {
+    font-family: Verdana, sans-serif;
+    color: #242626;
+    background-color: limegreen;
+}
+
+h2 {
+    color: purple;
+
+}
