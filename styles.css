@@ -1,8 +1,8 @@
 /* background */
 body {
     font-family: Arial, sans-serif;
-    color: rgb(137, 134, 134);
-    background-color: hsl(199, 27%, 18%); 
+    color: black; 
+    background-color: beige;  
 }
 
 header {
